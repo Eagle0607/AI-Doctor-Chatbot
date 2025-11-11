@@ -1,0 +1,38 @@
+/* Smooth reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Dark gradient background */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at top, #1a1f26, #0b0d10);
+  overflow: hidden;
+}
+
+/* Scrollbars inside chat only */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 6px;
+}
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 8px rgba(58,139,255,0.4), 0 0 12px rgba(58,139,255,0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(58,139,255,0.85), 0 0 32px rgba(58,139,255,0.55);
+    transform: scale(1.06);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(58,139,255,0.4), 0 0 12px rgba(58,139,255,0.2);
+    transform: scale(1);
+  }
+}

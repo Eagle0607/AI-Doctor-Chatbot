@@ -1,0 +1,17 @@
+# Node modules
+client/node_modules/
+
+# Build output
+client/dist/
+
+# Python environment
+server/.venv/
+server/__pycache__/
+
+# VS Code settings
+.vscode/
+
+# Environment variables (MOST IMPORTANT)
+**/.env
+.env
+.env.*
